@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
-    font-family: 'Bookman';
 }
 
 @font-face {
@@ -11,6 +10,7 @@
 }
 
 html {
+    font-family: 'Bookman';
     color: white;
     background-color: rgb(17, 17, 17);
 }
@@ -97,7 +97,7 @@ p {
     }
 
     h2 {
-        font-size: 2.3rem;
+        font-size: 2rem;
         font-weight: 700;
         margin-bottom: 2rem;
         color: white;
@@ -125,9 +125,17 @@ p {
     }
 }
 
+.continua {
+    text-align: center;
+
+    img {
+        width: 150px;
+        margin-top: 3rem;
+    }
+}
+
 
 /* cover */
-
 #book_cover {
     background: #242623;
     height: 100vh;
@@ -302,7 +310,469 @@ p {
     }
 }
 
-#gastronomia {
+#gastronomia1 {
+    background: #242623;
+    position: relative;
+
+    .deco_idx {
+        position: relative;
+        height: 100vh;
+
+        img {
+            width: 300px;
+
+            @include small {
+                width: 180px;
+            }
+        }
+
+        .usx {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .ddx {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            transform: rotate(180deg);
+        }
+
+    }
+
+    .content_idx {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+
+            li {
+                margin: 1.5rem 3rem;
+                font-size: 1.5rem;
+
+                @include small {
+                    margin: 1rem;
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        p {
+            padding: 0rem 3rem;
+            color: rgb(187, 187, 187);
+
+            @include small {
+                padding: 1rem;
+            }
+        }
+    }
+}
+
+#gastronomia2 {
+    background: #242623;
+    position: relative;
+
+    .deco_idx {
+        position: relative;
+        height: 100vh;
+
+        img {
+            width: 300px;
+
+            @include small {
+                width: 180px;
+            }
+        }
+
+        .usx {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .ddx {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            transform: rotate(180deg);
+        }
+
+    }
+
+    .content_idx {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+
+            li {
+                margin: 1.5rem 3rem;
+                font-size: 1.5rem;
+
+                @include small {
+                    margin: 1rem;
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        p {
+            padding: 0rem 3rem;
+            color: rgb(187, 187, 187);
+
+            @include small {
+                padding: 1rem;
+            }
+        }
+    }
+}
+
+#gastronomia3 {
+    background: #242623;
+    position: relative;
+
+    .deco_idx {
+        position: relative;
+        height: 100vh;
+
+        img {
+            width: 300px;
+
+            @include small {
+                width: 180px;
+            }
+        }
+
+        .usx {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .ddx {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            transform: rotate(180deg);
+        }
+
+    }
+
+    .content_idx {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+
+            li {
+                margin: 1.5rem 3rem;
+                font-size: 1.5rem;
+
+                @include small {
+                    margin: 1rem;
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        p {
+            padding: 0rem 3rem;
+            color: rgb(187, 187, 187);
+
+            @include small {
+                padding: 1rem;
+            }
+        }
+    }
+}
+
+#gastronomia4 {
+    background: #242623;
+    position: relative;
+
+    .deco_idx {
+        position: relative;
+        height: 100vh;
+
+        img {
+            width: 300px;
+
+            @include small {
+                width: 180px;
+            }
+        }
+
+        .usx {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .ddx {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            transform: rotate(180deg);
+        }
+
+    }
+
+    .content_idx {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+
+            li {
+                margin: 1.5rem 3rem;
+                font-size: 1.5rem;
+
+                @include small {
+                    margin: 1rem;
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        p {
+            padding: 0rem 3rem;
+            color: rgb(187, 187, 187);
+
+            @include small {
+                padding: 1rem;
+            }
+        }
+    }
+}
+
+#gastronomia5 {
+    background: #242623;
+    position: relative;
+
+    .deco_idx {
+        position: relative;
+        height: 100vh;
+
+        img {
+            width: 300px;
+
+            @include small {
+                width: 180px;
+            }
+        }
+
+        .usx {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .ddx {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            transform: rotate(180deg);
+        }
+
+    }
+
+    .content_idx {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+
+            li {
+                margin: 1.5rem 3rem;
+                font-size: 1.5rem;
+
+                @include small {
+                    margin: 1rem;
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        p {
+            padding: 0rem 3rem;
+            color: rgb(187, 187, 187);
+
+            @include small {
+                padding: 1rem;
+            }
+        }
+    }
+}
+
+#gastronomia6 {
+    background: #242623;
+    position: relative;
+
+    .deco_idx {
+        position: relative;
+        height: 100vh;
+
+        img {
+            width: 300px;
+
+            @include small {
+                width: 180px;
+            }
+        }
+
+        .usx {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .ddx {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            transform: rotate(180deg);
+        }
+
+    }
+
+    .content_idx {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+
+            li {
+                margin: 1.5rem 3rem;
+                font-size: 1.5rem;
+
+                @include small {
+                    margin: 1rem;
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        p {
+            padding: 0rem 3rem;
+            color: rgb(187, 187, 187);
+
+            @include small {
+                padding: 1rem;
+            }
+        }
+    }
+}
+
+#gastronomia7 {
+    background: #242623;
+    position: relative;
+
+    .deco_idx {
+        position: relative;
+        height: 100vh;
+
+        img {
+            width: 300px;
+
+            @include small {
+                width: 180px;
+            }
+        }
+
+        .usx {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .ddx {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            transform: rotate(180deg);
+        }
+
+    }
+
+    .content_idx {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+
+            li {
+                margin: 1.5rem 3rem;
+                font-size: 1.5rem;
+
+                @include small {
+                    margin: 1rem;
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        p {
+            padding: 0rem 3rem;
+            color: rgb(187, 187, 187);
+
+            @include small {
+                padding: 1rem;
+            }
+        }
+    }
+}
+
+#birra1 {
     background: #242623;
     position: relative;
 
@@ -341,28 +811,30 @@ p {
         left: 50%;
         transform: translate(-50%, -50%);
         width: 100%;
+        text-align: center;
 
-        ul {
-            display: flex;
-            justify-content: space-between;
+        .fancy_up {
+            width: 300px;
+            padding: 3rem;
+        }
 
-            li {
-                margin: 3rem;
-                font-size: 1.5rem;
-
-                @include small {
-                    margin: 1rem;
-                    font-size: 1.2rem;
-                }
-            }
+        .fancy_dwn {
+            width: 300px;
+            padding: 3rem;
+            transform: rotate(180deg);
         }
 
         p {
-            padding: 0rem 3rem;
+            padding: 3rem 3rem;
             color: rgb(187, 187, 187);
+            width: 50%;
+            margin: 0 auto;
+            font-size: 1.5rem;
 
             @include small {
                 padding: 1rem;
+                font-size: 1rem;
+                width: 90%;
             }
         }
     }
