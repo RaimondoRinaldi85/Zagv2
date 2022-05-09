@@ -34,7 +34,7 @@ li {
   height: 100vh;
 }
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 800px) {
   #book_cover {
     background: url(../img/bg_cover_m.jpg) no-repeat center center;
     background-size: contain;
@@ -65,7 +65,7 @@ li {
   margin-top: 10rem;
 }
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 800px) {
   #book_cover .content .logo {
     width: 300px;
   }
@@ -107,7 +107,7 @@ li {
   margin: 3rem 0;
 }
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 800px) {
   #book_cover .content ul {
     margin: 1rem 0;
   }

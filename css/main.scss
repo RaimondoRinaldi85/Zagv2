@@ -53,7 +53,7 @@ li {
     background-size: contain;
     height: 100vh;
 
-    @include medium {
+    @include small {
         background: url(../img/bg_cover_m.jpg) no-repeat center center;
         background-size: contain;
     }
@@ -71,7 +71,7 @@ li {
             width: 500px;
             margin-top: 10rem;
 
-            @include medium {
+            @include small {
                 width: 300px;
             }
         }
@@ -108,7 +108,7 @@ li {
             justify-content: space-evenly;
             margin: 3rem 0;
 
-            @include medium {
+            @include small {
                 margin: 1rem 0;
             }
 
