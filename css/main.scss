@@ -86,6 +86,45 @@ p {
     }
 }
 
+.title {
+    text-align: center;
+
+    h3 {
+        padding: .7rem;
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 2.3rem;
+        font-weight: 700;
+        margin-bottom: 2rem;
+        color: white;
+        letter-spacing: 3px;
+    }
+
+    .div_up {
+        width: 150px;
+
+        @include small {
+            width: 100px;
+
+        }
+    }
+
+    .div_dwn {
+        transform: rotate(180deg);
+        width: 150px;
+        margin-bottom: 3rem;
+
+        @include small {
+            width: 100px;
+        }
+
+    }
+}
+
 
 /* cover */
 
@@ -226,7 +265,6 @@ p {
         display: flex;
         flex-direction: column;
         align-items: center;
-
         position: absolute;
         top: 50%;
         left: 50%;
@@ -254,7 +292,77 @@ p {
 
                 a {
                     font-weight: 700;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
                 }
+            }
+        }
+    }
+}
+
+#gastronomia {
+    background: #242623;
+    position: relative;
+
+    .deco_idx {
+        position: relative;
+        height: 100vh;
+
+        img {
+            width: 300px;
+
+            @include small {
+                width: 180px;
+            }
+        }
+
+        .usx {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .ddx {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            transform: rotate(180deg);
+        }
+
+    }
+
+    .content_idx {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+
+            li {
+                margin: 3rem;
+                font-size: 1.5rem;
+
+                @include small {
+                    margin: 1rem;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+
+        p {
+            padding: 0rem 3rem;
+            color: rgb(187, 187, 187);
+
+            @include small {
+                padding: 1rem;
             }
         }
     }
