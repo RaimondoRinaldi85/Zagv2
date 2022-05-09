@@ -2,6 +2,12 @@
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
+    font-family: 'Bookman';
+}
+
+@font-face {
+    font-family: "Bookman";
+    src: url(../font/BKMNOS.ttf);
 }
 
 html {
@@ -37,16 +43,49 @@ html {
     }
 }
 
-body {}
+hr {
+    color: #242623;
+    height: 50px;
+    border: none;
+}
 
 a {
     color: white;
     text-decoration: none;
+
+    &:hover {
+        color: #186E26;
+    }
+
 }
 
 li {
     list-style: none;
 }
+
+p {
+    color: white;
+}
+
+.title_idx {
+    text-align: center;
+
+    p {
+        font-size: 2rem;
+        font-weight: 300;
+    }
+
+    img {
+        transform: rotate(180deg);
+        width: 150px;
+        margin-bottom: 1rem;
+
+        @include small {
+            width: 100px;
+        }
+    }
+}
+
 
 /* cover */
 
@@ -129,11 +168,6 @@ li {
         a {
             font-weight: 800;
             font-size: 2rem;
-
-            &:hover {
-                color: #186E26;
-            }
-
         }
 
         p {
@@ -158,8 +192,13 @@ li {
 /* index */
 
 #index {
+    background: #242623;
+    position: relative;
 
     .deco_idx {
+        position: relative;
+        height: 100vh;
+
         img {
             width: 300px;
 
@@ -168,9 +207,55 @@ li {
             }
         }
 
-        .usx {}
+        .usx {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
 
-        .ddx {}
+        .ddx {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            transform: rotate(180deg);
+        }
 
+    }
+
+    .content_idx {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        .index_expl {
+            text-align: center;
+
+            img {
+                width: 100px;
+
+                @include small {
+                    width: 70px;
+                }
+            }
+
+            p {
+                font-size: .7rem;
+            }
+        }
+
+        ul {
+            li {
+                margin-top: 2rem;
+
+                a {
+                    font-weight: 700;
+                }
+            }
+        }
     }
 }
