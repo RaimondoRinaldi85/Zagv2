@@ -352,6 +352,13 @@ p {
           transform: rotate(180deg);
 }
 
+#gastronomia1 .deco_idx .ind {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 80px;
+}
+
 #gastronomia1 .content_idx {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -432,6 +439,13 @@ p {
   right: 0;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+}
+
+#gastronomia2 .deco_idx .ind {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 80px;
 }
 
 #gastronomia2 .content_idx {
@@ -516,6 +530,13 @@ p {
           transform: rotate(180deg);
 }
 
+#gastronomia3 .deco_idx .ind {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 80px;
+}
+
 #gastronomia3 .content_idx {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -596,6 +617,13 @@ p {
   right: 0;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+}
+
+#gastronomia4 .deco_idx .ind {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 80px;
 }
 
 #gastronomia4 .content_idx {
@@ -680,6 +708,13 @@ p {
           transform: rotate(180deg);
 }
 
+#gastronomia5 .deco_idx .ind {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 80px;
+}
+
 #gastronomia5 .content_idx {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -760,6 +795,13 @@ p {
   right: 0;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+}
+
+#gastronomia6 .deco_idx .ind {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 80px;
 }
 
 #gastronomia6 .content_idx {
@@ -844,6 +886,13 @@ p {
           transform: rotate(180deg);
 }
 
+#gastronomia7 .deco_idx .ind {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 80px;
+}
+
 #gastronomia7 .content_idx {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -926,6 +975,13 @@ p {
           transform: rotate(180deg);
 }
 
+#birra1 .deco_idx .ind {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 80px;
+}
+
 #birra1 .content_idx {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -969,5 +1025,90 @@ p {
     font-size: 1rem;
     width: 90%;
   }
+}
+
+/* modal indice */
+#overlay {
+  position: fixed;
+  opacity: 0;
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal2 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+  border-radius: 5px;
+  z-index: 10;
+  background: #242623;
+  color: white;
+  width: 500px;
+  max-width: 80%;
+  border: 1px solid white;
+}
+
+.modal2.active {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+}
+
+.modal2-header {
+  padding: 1rem 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid white;
+}
+
+.modal2-header .title {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.modal2-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 2.1rem;
+  font-weight: bold;
+  color: white;
+}
+
+.modal2-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 15px;
+  font-size: 1rem;
+  max-height: 50rem;
+  overflow: hidden;
+}
+
+.modal2-body ul li {
+  padding: 1rem 15px;
+  font-size: 1.3rem;
 }
 /*# sourceMappingURL=main.css.map */

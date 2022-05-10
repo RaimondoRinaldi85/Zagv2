@@ -135,6 +135,20 @@ p {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* cover */
 #book_cover {
     background: #242623;
@@ -339,6 +353,13 @@ p {
             transform: rotate(180deg);
         }
 
+        .ind {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 80px;
+        }
+
     }
 
     .content_idx {
@@ -403,6 +424,13 @@ p {
             bottom: 0;
             right: 0;
             transform: rotate(180deg);
+        }
+
+        .ind {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 80px;
         }
 
     }
@@ -471,6 +499,13 @@ p {
             transform: rotate(180deg);
         }
 
+        .ind {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 80px;
+        }
+
     }
 
     .content_idx {
@@ -535,6 +570,13 @@ p {
             bottom: 0;
             right: 0;
             transform: rotate(180deg);
+        }
+
+        .ind {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 80px;
         }
 
     }
@@ -603,6 +645,13 @@ p {
             transform: rotate(180deg);
         }
 
+        .ind {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 80px;
+        }
+
     }
 
     .content_idx {
@@ -667,6 +716,13 @@ p {
             bottom: 0;
             right: 0;
             transform: rotate(180deg);
+        }
+
+        .ind {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 80px;
         }
 
     }
@@ -735,6 +791,13 @@ p {
             transform: rotate(180deg);
         }
 
+        .ind {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 80px;
+        }
+
     }
 
     .content_idx {
@@ -801,6 +864,13 @@ p {
             transform: rotate(180deg);
         }
 
+        .ind {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 80px;
+        }
+
     }
 
     .content_idx {
@@ -838,4 +908,109 @@ p {
             }
         }
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* modal indice */
+#overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .9);
+    pointer-events: none;
+}
+
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modal2 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border-radius: 5px;
+    z-index: 10;
+    background: #242623;
+    color: white;
+    width: 500px;
+    max-width: 80%;
+    border: 1px solid white;
+}
+
+.modal2.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal2-header {
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid white;
+}
+
+.modal2-header .title {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.modal2-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 2.1rem;
+    font-weight: bold;
+    color: white;
+}
+
+.modal2-body {
+    display: flex;
+    padding: 10px 15px;
+    font-size: 1rem;
+    max-height: 50rem;
+    overflow: hidden;
+}
+
+.modal2-body ul li {
+    padding: 1rem 15px;
+    font-size: 1.3rem;
 }
