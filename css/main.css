@@ -72,6 +72,7 @@ p {
 
 .title {
   text-align: center;
+  text-transform: uppercase;
 }
 
 .title h3 {
@@ -83,8 +84,8 @@ p {
 
 .title h2 {
   font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 2rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
   color: white;
   letter-spacing: 3px;
 }
@@ -312,6 +313,7 @@ p {
 
 #index .content_idx ul li a {
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 #index .content_idx ul li a:hover {
@@ -1024,6 +1026,184 @@ p {
     padding: 1rem;
     font-size: 1rem;
     width: 90%;
+  }
+}
+
+#birra2 {
+  background: #242623;
+  position: relative;
+}
+
+#birra2 .deco_idx {
+  position: relative;
+  height: 100vh;
+}
+
+#birra2 .deco_idx img {
+  width: 300px;
+}
+
+@media only screen and (max-width: 800px) {
+  #birra2 .deco_idx img {
+    width: 180px;
+  }
+}
+
+#birra2 .deco_idx .usx {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#birra2 .deco_idx .ddx {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+#birra2 .deco_idx .ind {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 80px;
+}
+
+#birra2 .content_idx {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 90%;
+}
+
+#birra2 .content_idx ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#birra2 .content_idx ul li {
+  margin: 1.5rem 3rem;
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 800px) {
+  #birra2 .content_idx ul li {
+    margin: 1rem;
+    font-size: 1rem;
+  }
+}
+
+#birra2 .content_idx p {
+  padding: 0rem 3rem;
+  color: #bbbbbb;
+}
+
+@media only screen and (max-width: 800px) {
+  #birra2 .content_idx p {
+    padding: 1rem;
+  }
+}
+
+#birra3 {
+  background: #242623;
+  position: relative;
+}
+
+#birra3 .deco_idx {
+  position: relative;
+  height: 100vh;
+}
+
+#birra3 .deco_idx img {
+  width: 300px;
+}
+
+@media only screen and (max-width: 800px) {
+  #birra3 .deco_idx img {
+    width: 180px;
+  }
+}
+
+#birra3 .deco_idx .usx {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#birra3 .deco_idx .ddx {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+#birra3 .deco_idx .ind {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 80px;
+}
+
+#birra3 .content_idx {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 90%;
+}
+
+#birra3 .content_idx ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#birra3 .content_idx ul li {
+  margin: 1.5rem 3rem;
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 800px) {
+  #birra3 .content_idx ul li {
+    margin: 1rem;
+    font-size: 1rem;
+  }
+}
+
+#birra3 .content_idx p {
+  padding: 0rem 3rem;
+  color: #bbbbbb;
+}
+
+@media only screen and (max-width: 800px) {
+  #birra3 .content_idx p {
+    padding: 1rem;
   }
 }
 
