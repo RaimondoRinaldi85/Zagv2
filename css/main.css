@@ -76,22 +76,23 @@ p {
 }
 
 .title h3 {
-  padding: .7rem;
+  padding: .5rem 0;
+  margin: 0;
   text-transform: uppercase;
   font-weight: 300;
-  font-size: 1rem;
+  font-size: .7rem;
 }
 
 .title h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 300;
-  margin-bottom: 1rem;
+  margin-bottom: .9rem;
   color: white;
   letter-spacing: 3px;
 }
 
 .title .div_up {
-  width: 150px;
+  width: 100px;
 }
 
 @media only screen and (max-width: 800px) {
@@ -103,7 +104,7 @@ p {
 .title .div_dwn {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
-  width: 150px;
+  width: 100px;
   margin-bottom: 3rem;
 }
 
@@ -120,6 +121,76 @@ p {
 .continua img {
   width: 150px;
   margin-top: 3rem;
+}
+
+.deco_idx {
+  position: relative;
+  height: 100vh;
+}
+
+.deco_idx img {
+  width: 300px;
+}
+
+@media only screen and (max-width: 800px) {
+  .deco_idx img {
+    width: 180px;
+  }
+}
+
+.deco_idx .usx {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.deco_idx .ddx {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.deco_idx .ind {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 80px;
+}
+
+.content ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.content ul li {
+  margin: 0 2rem;
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .content ul li {
+    margin: 1rem 1rem 0 1rem;
+    font-size: 1rem;
+  }
+}
+
+.content p {
+  padding: 0rem 2rem;
+  color: #bbbbbb;
+  margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .content p {
+    padding: 0rem 1rem;
+  }
 }
 
 /* cover */
@@ -325,43 +396,7 @@ p {
   position: relative;
 }
 
-#gastronomia1 .deco_idx {
-  position: relative;
-  height: 100vh;
-}
-
-#gastronomia1 .deco_idx img {
-  width: 300px;
-}
-
-@media only screen and (max-width: 800px) {
-  #gastronomia1 .deco_idx img {
-    width: 180px;
-  }
-}
-
-#gastronomia1 .deco_idx .usx {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-#gastronomia1 .deco_idx .ddx {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-}
-
-#gastronomia1 .deco_idx .ind {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  width: 80px;
-}
-
-#gastronomia1 .content_idx {
+#gastronomia1 .content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -375,38 +410,6 @@ p {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: 90%;
-}
-
-#gastronomia1 .content_idx ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-#gastronomia1 .content_idx ul li {
-  margin: 1.5rem 3rem;
-  font-size: 1.5rem;
-}
-
-@media only screen and (max-width: 800px) {
-  #gastronomia1 .content_idx ul li {
-    margin: 1rem;
-    font-size: 1rem;
-  }
-}
-
-#gastronomia1 .content_idx p {
-  padding: 0rem 3rem;
-  color: #bbbbbb;
-}
-
-@media only screen and (max-width: 800px) {
-  #gastronomia1 .content_idx p {
-    padding: 1rem;
-  }
 }
 
 #gastronomia2 {
@@ -414,43 +417,7 @@ p {
   position: relative;
 }
 
-#gastronomia2 .deco_idx {
-  position: relative;
-  height: 100vh;
-}
-
-#gastronomia2 .deco_idx img {
-  width: 300px;
-}
-
-@media only screen and (max-width: 800px) {
-  #gastronomia2 .deco_idx img {
-    width: 180px;
-  }
-}
-
-#gastronomia2 .deco_idx .usx {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-#gastronomia2 .deco_idx .ddx {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-}
-
-#gastronomia2 .deco_idx .ind {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  width: 80px;
-}
-
-#gastronomia2 .content_idx {
+#gastronomia2 .content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -464,38 +431,6 @@ p {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: 90%;
-}
-
-#gastronomia2 .content_idx ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-#gastronomia2 .content_idx ul li {
-  margin: 1.5rem 3rem;
-  font-size: 1.5rem;
-}
-
-@media only screen and (max-width: 800px) {
-  #gastronomia2 .content_idx ul li {
-    margin: 1rem;
-    font-size: 1rem;
-  }
-}
-
-#gastronomia2 .content_idx p {
-  padding: 0rem 3rem;
-  color: #bbbbbb;
-}
-
-@media only screen and (max-width: 800px) {
-  #gastronomia2 .content_idx p {
-    padding: 1rem;
-  }
 }
 
 #gastronomia3 {
@@ -503,43 +438,7 @@ p {
   position: relative;
 }
 
-#gastronomia3 .deco_idx {
-  position: relative;
-  height: 100vh;
-}
-
-#gastronomia3 .deco_idx img {
-  width: 300px;
-}
-
-@media only screen and (max-width: 800px) {
-  #gastronomia3 .deco_idx img {
-    width: 180px;
-  }
-}
-
-#gastronomia3 .deco_idx .usx {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-#gastronomia3 .deco_idx .ddx {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-}
-
-#gastronomia3 .deco_idx .ind {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  width: 80px;
-}
-
-#gastronomia3 .content_idx {
+#gastronomia3 .content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -553,38 +452,6 @@ p {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: 90%;
-}
-
-#gastronomia3 .content_idx ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-#gastronomia3 .content_idx ul li {
-  margin: 1.5rem 3rem;
-  font-size: 1.5rem;
-}
-
-@media only screen and (max-width: 800px) {
-  #gastronomia3 .content_idx ul li {
-    margin: 1rem;
-    font-size: 1rem;
-  }
-}
-
-#gastronomia3 .content_idx p {
-  padding: 0rem 3rem;
-  color: #bbbbbb;
-}
-
-@media only screen and (max-width: 800px) {
-  #gastronomia3 .content_idx p {
-    padding: 1rem;
-  }
 }
 
 #gastronomia4 {
@@ -592,43 +459,7 @@ p {
   position: relative;
 }
 
-#gastronomia4 .deco_idx {
-  position: relative;
-  height: 100vh;
-}
-
-#gastronomia4 .deco_idx img {
-  width: 300px;
-}
-
-@media only screen and (max-width: 800px) {
-  #gastronomia4 .deco_idx img {
-    width: 180px;
-  }
-}
-
-#gastronomia4 .deco_idx .usx {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-#gastronomia4 .deco_idx .ddx {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-}
-
-#gastronomia4 .deco_idx .ind {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  width: 80px;
-}
-
-#gastronomia4 .content_idx {
+#gastronomia4 .content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -642,38 +473,6 @@ p {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: 90%;
-}
-
-#gastronomia4 .content_idx ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-#gastronomia4 .content_idx ul li {
-  margin: 1.5rem 3rem;
-  font-size: 1.5rem;
-}
-
-@media only screen and (max-width: 800px) {
-  #gastronomia4 .content_idx ul li {
-    margin: 1rem;
-    font-size: 1rem;
-  }
-}
-
-#gastronomia4 .content_idx p {
-  padding: 0rem 3rem;
-  color: #bbbbbb;
-}
-
-@media only screen and (max-width: 800px) {
-  #gastronomia4 .content_idx p {
-    padding: 1rem;
-  }
 }
 
 #gastronomia5 {
@@ -681,43 +480,7 @@ p {
   position: relative;
 }
 
-#gastronomia5 .deco_idx {
-  position: relative;
-  height: 100vh;
-}
-
-#gastronomia5 .deco_idx img {
-  width: 300px;
-}
-
-@media only screen and (max-width: 800px) {
-  #gastronomia5 .deco_idx img {
-    width: 180px;
-  }
-}
-
-#gastronomia5 .deco_idx .usx {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-#gastronomia5 .deco_idx .ddx {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-}
-
-#gastronomia5 .deco_idx .ind {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  width: 80px;
-}
-
-#gastronomia5 .content_idx {
+#gastronomia5 .content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -731,38 +494,6 @@ p {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: 90%;
-}
-
-#gastronomia5 .content_idx ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-#gastronomia5 .content_idx ul li {
-  margin: 1.5rem 3rem;
-  font-size: 1.5rem;
-}
-
-@media only screen and (max-width: 800px) {
-  #gastronomia5 .content_idx ul li {
-    margin: 1rem;
-    font-size: 1rem;
-  }
-}
-
-#gastronomia5 .content_idx p {
-  padding: 0rem 3rem;
-  color: #bbbbbb;
-}
-
-@media only screen and (max-width: 800px) {
-  #gastronomia5 .content_idx p {
-    padding: 1rem;
-  }
 }
 
 #gastronomia6 {
@@ -770,43 +501,7 @@ p {
   position: relative;
 }
 
-#gastronomia6 .deco_idx {
-  position: relative;
-  height: 100vh;
-}
-
-#gastronomia6 .deco_idx img {
-  width: 300px;
-}
-
-@media only screen and (max-width: 800px) {
-  #gastronomia6 .deco_idx img {
-    width: 180px;
-  }
-}
-
-#gastronomia6 .deco_idx .usx {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-#gastronomia6 .deco_idx .ddx {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-}
-
-#gastronomia6 .deco_idx .ind {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  width: 80px;
-}
-
-#gastronomia6 .content_idx {
+#gastronomia6 .content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -820,38 +515,6 @@ p {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: 90%;
-}
-
-#gastronomia6 .content_idx ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-#gastronomia6 .content_idx ul li {
-  margin: 1.5rem 3rem;
-  font-size: 1.5rem;
-}
-
-@media only screen and (max-width: 800px) {
-  #gastronomia6 .content_idx ul li {
-    margin: 1rem;
-    font-size: 1rem;
-  }
-}
-
-#gastronomia6 .content_idx p {
-  padding: 0rem 3rem;
-  color: #bbbbbb;
-}
-
-@media only screen and (max-width: 800px) {
-  #gastronomia6 .content_idx p {
-    padding: 1rem;
-  }
 }
 
 #gastronomia7 {
@@ -859,43 +522,7 @@ p {
   position: relative;
 }
 
-#gastronomia7 .deco_idx {
-  position: relative;
-  height: 100vh;
-}
-
-#gastronomia7 .deco_idx img {
-  width: 300px;
-}
-
-@media only screen and (max-width: 800px) {
-  #gastronomia7 .deco_idx img {
-    width: 180px;
-  }
-}
-
-#gastronomia7 .deco_idx .usx {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-#gastronomia7 .deco_idx .ddx {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-}
-
-#gastronomia7 .deco_idx .ind {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  width: 80px;
-}
-
-#gastronomia7 .content_idx {
+#gastronomia7 .content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -911,80 +538,12 @@ p {
   width: 90%;
 }
 
-#gastronomia7 .content_idx ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-#gastronomia7 .content_idx ul li {
-  margin: 1.5rem 3rem;
-  font-size: 1.5rem;
-}
-
-@media only screen and (max-width: 800px) {
-  #gastronomia7 .content_idx ul li {
-    margin: 1rem;
-    font-size: 1rem;
-  }
-}
-
-#gastronomia7 .content_idx p {
-  padding: 0rem 3rem;
-  color: #bbbbbb;
-}
-
-@media only screen and (max-width: 800px) {
-  #gastronomia7 .content_idx p {
-    padding: 1rem;
-  }
-}
-
 #birra1 {
   background: #242623;
   position: relative;
 }
 
-#birra1 .deco_idx {
-  position: relative;
-  height: 100vh;
-}
-
-#birra1 .deco_idx img {
-  width: 300px;
-}
-
-@media only screen and (max-width: 800px) {
-  #birra1 .deco_idx img {
-    width: 180px;
-  }
-}
-
-#birra1 .deco_idx .usx {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-#birra1 .deco_idx .ddx {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-}
-
-#birra1 .deco_idx .ind {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  width: 80px;
-}
-
-#birra1 .content_idx {
+#birra1 .content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1001,19 +560,19 @@ p {
   text-align: center;
 }
 
-#birra1 .content_idx .fancy_up {
+#birra1 .content .fancy_up {
   width: 300px;
   padding: 3rem;
 }
 
-#birra1 .content_idx .fancy_dwn {
+#birra1 .content .fancy_dwn {
   width: 300px;
   padding: 3rem;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
 
-#birra1 .content_idx p {
+#birra1 .content p {
   padding: 3rem 3rem;
   color: #bbbbbb;
   width: 50%;
@@ -1022,7 +581,7 @@ p {
 }
 
 @media only screen and (max-width: 800px) {
-  #birra1 .content_idx p {
+  #birra1 .content p {
     padding: 1rem;
     font-size: 1rem;
     width: 90%;
@@ -1034,43 +593,7 @@ p {
   position: relative;
 }
 
-#birra2 .deco_idx {
-  position: relative;
-  height: 100vh;
-}
-
-#birra2 .deco_idx img {
-  width: 300px;
-}
-
-@media only screen and (max-width: 800px) {
-  #birra2 .deco_idx img {
-    width: 180px;
-  }
-}
-
-#birra2 .deco_idx .usx {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-#birra2 .deco_idx .ddx {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-}
-
-#birra2 .deco_idx .ind {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  width: 80px;
-}
-
-#birra2 .content_idx {
+#birra2 .content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1084,38 +607,6 @@ p {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: 90%;
-}
-
-#birra2 .content_idx ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-#birra2 .content_idx ul li {
-  margin: 1.5rem 3rem;
-  font-size: 1.5rem;
-}
-
-@media only screen and (max-width: 800px) {
-  #birra2 .content_idx ul li {
-    margin: 1rem;
-    font-size: 1rem;
-  }
-}
-
-#birra2 .content_idx p {
-  padding: 0rem 3rem;
-  color: #bbbbbb;
-}
-
-@media only screen and (max-width: 800px) {
-  #birra2 .content_idx p {
-    padding: 1rem;
-  }
 }
 
 #birra3 {
@@ -1123,43 +614,7 @@ p {
   position: relative;
 }
 
-#birra3 .deco_idx {
-  position: relative;
-  height: 100vh;
-}
-
-#birra3 .deco_idx img {
-  width: 300px;
-}
-
-@media only screen and (max-width: 800px) {
-  #birra3 .deco_idx img {
-    width: 180px;
-  }
-}
-
-#birra3 .deco_idx .usx {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-#birra3 .deco_idx .ddx {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-}
-
-#birra3 .deco_idx .ind {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  width: 80px;
-}
-
-#birra3 .content_idx {
+#birra3 .content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1175,36 +630,46 @@ p {
   width: 90%;
 }
 
-#birra3 .content_idx ul {
+#spritz1 {
+  background: #242623;
+  position: relative;
+}
+
+#spritz1 .content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 90%;
 }
 
-#birra3 .content_idx ul li {
-  margin: 1.5rem 3rem;
-  font-size: 1.5rem;
+#spritz2 {
+  background: #242623;
+  position: relative;
 }
 
-@media only screen and (max-width: 800px) {
-  #birra3 .content_idx ul li {
-    margin: 1rem;
-    font-size: 1rem;
-  }
-}
-
-#birra3 .content_idx p {
-  padding: 0rem 3rem;
-  color: #bbbbbb;
-}
-
-@media only screen and (max-width: 800px) {
-  #birra3 .content_idx p {
-    padding: 1rem;
-  }
+#spritz2 .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 90%;
 }
 
 /* modal indice */
