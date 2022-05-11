@@ -840,6 +840,125 @@ p {
   width: 90%;
 }
 
+#tef1 {
+  background: #242623;
+  position: relative;
+}
+
+#tef1 .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#tef1 .content .fancy_up {
+  width: 300px;
+  padding: 3rem;
+}
+
+#tef1 .content .fancy_dwn {
+  width: 300px;
+  padding: 3rem;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+#tef1 .content p {
+  padding: 3rem 3rem;
+  color: #bbbbbb;
+  width: 50%;
+  margin: 0 auto;
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 800px) {
+  #tef1 .content p {
+    padding: 1rem;
+    font-size: 1rem;
+    width: 90%;
+  }
+}
+
+#caffe1 {
+  background: #242623;
+  position: relative;
+}
+
+#caffe1 .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 90%;
+}
+
+#liam1 {
+  background: #242623;
+  position: relative;
+}
+
+#liam1 .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#liam1 .content .fancy_up {
+  width: 300px;
+  padding: 3rem;
+}
+
+#liam1 .content .fancy_dwn {
+  width: 300px;
+  padding: 3rem;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+#liam1 .content p {
+  padding: 3rem 3rem;
+  color: #bbbbbb;
+  width: 50%;
+  margin: 0 auto;
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 800px) {
+  #liam1 .content p {
+    padding: 1rem;
+    font-size: 1rem;
+    width: 90%;
+  }
+}
+
 /* modal indice */
 #overlay {
   position: fixed;
