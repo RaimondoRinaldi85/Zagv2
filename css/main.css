@@ -193,7 +193,6 @@ p {
   }
 }
 
-/* cover */
 #book_cover {
   background: #242623;
   height: 100vh;
@@ -258,6 +257,10 @@ p {
           transform: translate(-50%, -50%);
 }
 
+#book_cover .content img {
+  width: 100px;
+}
+
 #book_cover .content .logo {
   width: 400px;
   margin-bottom: 3rem;
@@ -281,7 +284,8 @@ p {
 }
 
 #book_cover .content .crediti {
-  font-size: 1rem;
+  margin-top: 2rem;
+  font-size: .8rem;
   font-weight: 300;
 }
 
@@ -307,10 +311,10 @@ p {
   margin: 0 3rem 3rem 3rem;
 }
 
-/* index */
 #index {
   background: #242623;
   position: relative;
+  border: 1px solid #186E26;
 }
 
 #index .deco_idx {
@@ -387,13 +391,10 @@ p {
   text-transform: uppercase;
 }
 
-#index .content_idx ul li a:hover {
-  text-decoration: underline;
-}
-
 #gastronomia1 {
   background: #242623;
   position: relative;
+  border: 1px solid #186E26;
 }
 
 #gastronomia1 .content {
@@ -415,6 +416,7 @@ p {
 #gastronomia2 {
   background: #242623;
   position: relative;
+  border: 1px solid #186E26;
 }
 
 #gastronomia2 .content {
@@ -436,6 +438,7 @@ p {
 #gastronomia3 {
   background: #242623;
   position: relative;
+  border: 1px solid #186E26;
 }
 
 #gastronomia3 .content {
@@ -457,6 +460,7 @@ p {
 #gastronomia4 {
   background: #242623;
   position: relative;
+  border: 1px solid #186E26;
 }
 
 #gastronomia4 .content {
@@ -478,6 +482,7 @@ p {
 #gastronomia5 {
   background: #242623;
   position: relative;
+  border: 1px solid #186E26;
 }
 
 #gastronomia5 .content {
@@ -499,6 +504,7 @@ p {
 #gastronomia6 {
   background: #242623;
   position: relative;
+  border: 1px solid #186E26;
 }
 
 #gastronomia6 .content {
@@ -520,6 +526,7 @@ p {
 #gastronomia7 {
   background: #242623;
   position: relative;
+  border: 1px solid #186E26;
 }
 
 #gastronomia7 .content {
@@ -541,6 +548,7 @@ p {
 #birra1 {
   background: #242623;
   position: relative;
+  border: 1px solid #186E26;
 }
 
 #birra1 .content {
@@ -591,6 +599,7 @@ p {
 #birra2 {
   background: #242623;
   position: relative;
+  border: 1px solid #186E26;
 }
 
 #birra2 .content {
@@ -612,6 +621,7 @@ p {
 #birra3 {
   background: #242623;
   position: relative;
+  border: 1px solid #186E26;
 }
 
 #birra3 .content {
@@ -633,6 +643,7 @@ p {
 #spritz1 {
   background: #242623;
   position: relative;
+  border: 1px solid #186E26;
 }
 
 #spritz1 .content {
@@ -654,6 +665,7 @@ p {
 #spritz2 {
   background: #242623;
   position: relative;
+  border: 1px solid #186E26;
 }
 
 #spritz2 .content {
@@ -675,6 +687,7 @@ p {
 #spritz3 {
   background: #242623;
   position: relative;
+  border: 1px solid #186E26;
 }
 
 #spritz3 .content {
@@ -696,6 +709,7 @@ p {
 #bio1 {
   background: #242623;
   position: relative;
+  border: 1px solid #186E26;
 }
 
 #bio1 .content {
@@ -717,6 +731,7 @@ p {
 #bio2 {
   background: #242623;
   position: relative;
+  border: 1px solid #186E26;
 }
 
 #bio2 .content {
@@ -738,6 +753,7 @@ p {
 #sbio1 {
   background: #242623;
   position: relative;
+  border: 1px solid #186E26;
 }
 
 #sbio1 .content {
@@ -759,6 +775,7 @@ p {
 #sbio2 {
   background: #242623;
   position: relative;
+  border: 1px solid #186E26;
 }
 
 #sbio2 .content {
@@ -780,6 +797,7 @@ p {
 #tec1 {
   background: #242623;
   position: relative;
+  border: 1px solid #186E26;
 }
 
 #tec1 .content {
@@ -801,6 +819,7 @@ p {
 #tec2 {
   background: #242623;
   position: relative;
+  border: 1px solid #186E26;
 }
 
 #tec2 .content {
@@ -822,6 +841,7 @@ p {
 #tec3 {
   background: #242623;
   position: relative;
+  border: 1px solid #186E26;
 }
 
 #tec3 .content {
@@ -843,6 +863,7 @@ p {
 #tef1 {
   background: #242623;
   position: relative;
+  border: 1px solid #186E26;
 }
 
 #tef1 .content {
@@ -892,6 +913,7 @@ p {
 #caffe1 {
   background: #242623;
   position: relative;
+  border: 1px solid #186E26;
 }
 
 #caffe1 .content {
@@ -913,6 +935,7 @@ p {
 #liam1 {
   background: #242623;
   position: relative;
+  border: 1px solid #186E26;
 }
 
 #liam1 .content {
@@ -992,7 +1015,7 @@ p {
   color: white;
   width: 500px;
   max-width: 80%;
-  border: 1px solid white;
+  border: 1px solid #186E26;
 }
 
 .modal2.active {
@@ -1011,7 +1034,7 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #186E26;
 }
 
 .modal2-header .title {
