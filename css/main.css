@@ -156,7 +156,13 @@ p {
   position: absolute;
   top: 0px;
   right: 0px;
-  width: 80px;
+  width: 150px;
+}
+
+@media only screen and (max-width: 800px) {
+  .deco_idx .ind {
+    width: 100px;
+  }
 }
 
 .content ul {

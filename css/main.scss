@@ -165,7 +165,11 @@ p {
         position: absolute;
         top: 0px;
         right: 0px;
-        width: 80px;
+        width: 150px;
+
+        @include small {
+            width: 100px;
+        }
     }
 
 }
