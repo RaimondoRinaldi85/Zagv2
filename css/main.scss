@@ -9,22 +9,6 @@
     src: url(../font/BKMNOS.ttf);
 }
 
-html {
-    font-family: 'Bookman';
-    color: white;
-    background-color: rgb(17, 17, 17);
-}
-
-::-webkit-scrollbar {
-    width: 10px;
-    background-color: #186E26;
-}
-
-::-webkit-scrollbar-thumb {
-    background: white;
-    border-radius: 10px;
-}
-
 @mixin small {
     @media only screen and (max-width: 800px) {
         @content;
@@ -41,6 +25,32 @@ html {
     @media only screen and (max-width: 1600px) {
         @content;
     }
+}
+
+html {
+    font-family: 'Bookman';
+    color: white;
+    background-color: rgb(17, 17, 17);
+}
+
+body {
+    margin: 0 auto;
+    width: 90%;
+
+    @include small {
+        width: 100vw;
+        margin: 0;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #186E26;
+}
+
+::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 10px;
 }
 
 hr {
