@@ -48,6 +48,46 @@ p {
   color: white;
 }
 
+.deco img {
+  width: 300px;
+}
+
+@media only screen and (max-width: 800px) {
+  .deco img {
+    width: 180px;
+  }
+}
+
+.deco .usx {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.deco .udx {
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.deco .dsx {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.deco .ddx {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
 .title_idx {
   text-align: center;
 }
@@ -202,46 +242,6 @@ p {
 #book_cover {
   background: #242623;
   height: 100vh;
-}
-
-#book_cover .deco img {
-  width: 300px;
-}
-
-@media only screen and (max-width: 800px) {
-  #book_cover .deco img {
-    width: 180px;
-  }
-}
-
-#book_cover .deco .usx {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-#book_cover .deco .udx {
-  position: absolute;
-  top: 0;
-  right: 0;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-}
-
-#book_cover .deco .dsx {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
-}
-
-#book_cover .deco .ddx {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
 }
 
 #book_cover .content {
@@ -982,6 +982,57 @@ p {
 
 @media only screen and (max-width: 800px) {
   #liam1 .content p {
+    padding: 1rem;
+    font-size: 1rem;
+    width: 90%;
+  }
+}
+
+#end {
+  background: #242623;
+  position: relative;
+  height: 100vh;
+}
+
+#end .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#end .content .fancy_up {
+  width: 300px;
+  padding: 3rem;
+}
+
+#end .content .fancy_dwn {
+  width: 300px;
+  padding: 3rem;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+#end .content p {
+  width: 90%;
+  padding: 3rem 3rem;
+  color: #bbbbbb;
+  margin: 0 auto;
+  font-size: 1.3rem;
+  text-transform: none;
+}
+
+@media only screen and (max-width: 800px) {
+  #end .content p {
     padding: 1rem;
     font-size: 1rem;
     width: 90%;

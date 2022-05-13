@@ -67,6 +67,44 @@ p {
     color: white;
 }
 
+.deco {
+    img {
+        width: 300px;
+
+        @include small {
+            width: 180px;
+        }
+    }
+
+    .usx {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .udx {
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: rotate(90deg);
+    }
+
+    .dsx {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transform: rotate(-90deg);
+    }
+
+    .ddx {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transform: rotate(180deg);
+    }
+
+}
+
 .title_idx {
     text-align: center;
 
@@ -206,45 +244,6 @@ p {
 #book_cover {
     background: #242623;
     height: 100vh;
-
-    .deco {
-        img {
-            width: 300px;
-
-            @include small {
-                width: 180px;
-            }
-        }
-
-        .usx {
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-
-        .udx {
-            position: absolute;
-            top: 0;
-            right: 0;
-            transform: rotate(90deg);
-        }
-
-        .dsx {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            transform: rotate(-90deg);
-        }
-
-        .ddx {
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            transform: rotate(180deg);
-        }
-
-    }
-
 
     .content {
         display: flex;
@@ -813,6 +812,48 @@ p {
             width: 50%;
             margin: 0 auto;
             font-size: 1.5rem;
+
+            @include small {
+                padding: 1rem;
+                font-size: 1rem;
+                width: 90%;
+            }
+        }
+    }
+}
+
+#end {
+    background: #242623;
+    position: relative;
+    height: 100vh;
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+
+        .fancy_up {
+            width: 300px;
+            padding: 3rem;
+        }
+
+        .fancy_dwn {
+            width: 300px;
+            padding: 3rem;
+            transform: rotate(180deg);
+        }
+
+        p {
+            width: 90%;
+            padding: 3rem 3rem;
+            color: rgb(187, 187, 187);
+            margin: 0 auto;
+            font-size: 1.3rem;
+            text-transform: none;
 
             @include small {
                 padding: 1rem;
