@@ -13,6 +13,8 @@ html {
   font-family: 'Bookman';
   color: white;
   background-color: #111111;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
 }
 
 body {
@@ -41,6 +43,10 @@ hr {
   color: #242623;
   height: 50px;
   border: none;
+}
+
+section {
+  scroll-snap-align: center;
 }
 
 a {
