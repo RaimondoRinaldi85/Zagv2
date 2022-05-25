@@ -12,9 +12,9 @@
 html {
   font-family: 'Bookman';
   color: white;
-  background-color: #111111;
   -ms-scroll-snap-type: y mandatory;
       scroll-snap-type: y mandatory;
+  background-color: #1e1e1e;
 }
 
 body {
