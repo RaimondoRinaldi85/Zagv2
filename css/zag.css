@@ -21,6 +21,16 @@ body {
     color: #fff;
 }
 
+::-webkit-scrollbar {
+    width: 7px;
+    background-color: #186E26;
+}
+
+::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 5px;
+}
+
 
 
 
@@ -60,10 +70,11 @@ body {
 
 #book_cover .content a {
     text-decoration: none;
+    letter-spacing: 3px;
     color: white;
 }
 
-#book_cover .content a :hover {
+#book_cover .content a:hover {
     color: green;
 }
 
@@ -106,9 +117,9 @@ body {
 }
 
 #book_cover .content .crediti {
-    margin-top: 2rem;
-    font-size: .8rem;
-    font-weight: 300;
+    margin-top: 4rem;
+    font-size: 1rem;
+    font-weight: 400;
 }
 
 #book_cover .content a {
@@ -202,10 +213,10 @@ hr {
 }
 
 .accordion-item {
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
     color: #242623;
-    margin: 3rem 0;
-    border-radius: 0.5rem;
+    margin: 2rem 0;
+    border-radius: 0.2rem;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
 }
 
@@ -213,7 +224,7 @@ hr {
     padding: 0.5rem 3rem 0.5rem 1rem;
     min-height: 3.5rem;
     line-height: 1.25rem;
-    font-weight: bold;
+    font-weight: 700;
     display: flex;
     align-items: center;
     position: relative;
@@ -241,7 +252,7 @@ hr {
     padding: 1rem;
     line-height: 1.5rem;
     border-top: 1px solid;
-    border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+    border-image: linear-gradient(to right, transparent, #2c2c2c, transparent) 1;
 }
 
 .accordion-item-body-content ul {
@@ -267,4 +278,29 @@ hr {
     html {
         font-size: 14px;
     }
+}
+
+.deco_menu {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+}
+
+.deco_menu img {
+    margin: 0.3rem auto 1rem auto;
+    width: 100px;
+    transform: rotateX(180deg);
+}
+
+.deco_menu h3 {
+    margin-top: 3rem;
+}
+
+.menu {
+    position: absolute;
+}
+
+.deco_menu {
+    position: relative;
 }
