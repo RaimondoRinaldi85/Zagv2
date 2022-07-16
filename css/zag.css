@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 @font-face {
@@ -20,11 +21,178 @@ body {
     color: #fff;
 }
 
-h1 {
-    text-align: center;
-    margin: 2rem 0;
-    font-size: 2.5rem;
+
+
+
+/*prima*/
+#book_cover {
+    background: #242623;
+    height: 100vh;
 }
+
+#book_cover .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#book_cover .content img {
+    width: 100px;
+}
+
+#book_cover .content .logo {
+    width: 400px;
+    margin-bottom: 3rem;
+}
+
+#book_cover .content a {
+    text-decoration: none;
+    color: white;
+}
+
+#book_cover .content a :hover {
+    color: green;
+}
+
+#book_cover .content li {
+    list-style-type: none;
+    color: white;
+}
+
+#book_cover .content li :hover {
+    color: green;
+}
+
+@media only screen and (max-width: 800px) {
+    #book_cover .content .logo {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    #book_cover .content .logo {
+        width: 230px;
+    }
+}
+
+#book_cover .content .style_cover {
+    width: 300px;
+    margin-bottom: 3rem;
+}
+
+@media only screen and (max-width: 800px) {
+    #book_cover .content .style_cover {
+        width: 200px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    #book_cover .content .style_cover {
+        width: 150px;
+    }
+}
+
+#book_cover .content .crediti {
+    margin-top: 2rem;
+    font-size: .8rem;
+    font-weight: 300;
+}
+
+#book_cover .content a {
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+#book_cover .content p {
+    margin-top: 0;
+    font-size: .8rem;
+    margin-bottom: 3rem;
+}
+
+#book_cover .content ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+#book_cover .content ul li i {
+    font-size: 3.5rem;
+    margin: 0 3rem 3rem 3rem;
+}
+
+.deco {
+    position: relative;
+    height: 100vh;
+}
+
+.deco img {
+    width: 300px;
+}
+
+@media only screen and (max-width: 800px) {
+    .deco img {
+        width: 150px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .deco img {
+        width: 100px;
+    }
+}
+
+.deco .usx {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.deco .udx {
+    position: absolute;
+    top: 0;
+    right: 0;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.deco .dsx {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.deco .ddx {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+hr {
+    color: #242623;
+    height: 50px;
+    border: none;
+}
+
+/*endprima*/
+
+/* accordion */
 
 .accordion {
     width: 90%;
@@ -36,7 +204,7 @@ h1 {
 .accordion-item {
     background-color: #fff;
     color: #242623;
-    margin: 1rem 0;
+    margin: 3rem 0;
     border-radius: 0.5rem;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
 }
