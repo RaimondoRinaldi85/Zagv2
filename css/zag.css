@@ -125,6 +125,10 @@ body {
     font-size: 2rem;
 }
 
+#book_cover .content .menu {
+    color: green;
+}
+
 #book_cover .content p {
     margin-top: 0;
     font-size: .8rem;
@@ -293,4 +297,20 @@ hr {
 
 .deco_menu h3 {
     margin-top: 3rem;
+}
+
+.sign {
+    background-color: #186E26;
+    padding: .3rem;
+    text-align: center;
+    font-size: .9rem;
+}
+
+.sign a {
+    color: white;
+    text-decoration: none;
+}
+
+.sign a:hover {
+    color: #242623;
 }
